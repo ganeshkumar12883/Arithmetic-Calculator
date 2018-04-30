@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>My Calculator</title>
+    <link href="css/calc.css" rel="stylesheet" />
+    <script src="lib/angular/angular.js"></script>
+    <script src="js/app/calc-app.js"></script>
+    <script src="js/controller/calc-controller.js"></script>
+</head>
+
+<body ng-app="calcApp">
+    <div ng-controller="CalculatorCtrl as ctrl">
+        <div class="calcbody">
+            <div class="previousoperation" ng-if="ctrl.showprevop">
+                <p>
+                    <span class="prevopfield" ng-bind="ctrl.operationPerformed"></span>
+                </p>
+            </div>
+            <div class="currentoperation">
+                <p>
+                    <span class="numberfield" ng-bind="ctrl.firstNumber"></span>
+                    <span class="numberfield" ng-bind="ctrl.operator"></span>
+                    <span class="numberfield" ng-bind="ctrl.secondNumber"></span>
+                </p>
+            </div>
+            <div class="calcbuttons">
+                <p>
+                    <button class="operationbutton" ng-click="ctrl.clearContent('C')">C</button>
+                    <button class="operationbutton" ng-click="ctrl.clearContent('AC')">AC</button>
+                    <button class="operationbutton" ng-click="ctrl.updateSign()">+/-</button>
+                    <button class="operationbutton" ng-click="ctrl.backspace()">&larr;</button>
+                </p>
+                <p>
+                    <button class="numberbutton" ng-click="ctrl.updateNumber(9)">9</button>
+                    <button class="numberbutton" ng-click="ctrl.updateNumber(8)">8</button>
+                    <button class="numberbutton" ng-click="ctrl.updateNumber(7)">7</button>
+                    <button class="operationbutton" ng-click="ctrl.updateOperator('/')">/</button>
+                </p>
+                <p>
+                    <button class="numberbutton" ng-click="ctrl.updateNumber(4)">4</button>
+                    <button class="numberbutton" ng-click="ctrl.updateNumber(5)">5</button>
+                    <button class="numberbutton" ng-click="ctrl.updateNumber(6)">6</button>
+                    <button class="operationbutton" ng-click="ctrl.updateOperator('*')">*</button>
+                </p>
+                <p>
+                    <button class="numberbutton" ng-click="ctrl.updateNumber(3)">3</button>
+                    <button class="numberbutton" ng-click="ctrl.updateNumber(2)">2</button>
+                    <button class="numberbutton" ng-click="ctrl.updateNumber(1)">1</button>
+                    <button class="operationbutton" ng-click="ctrl.updateOperator('-')">-</button>
+                </p>
+                <p>
+                    <button class="numberbutton" ng-click="ctrl.updateNumber(0)">0</button>
+                    <button class="numberbutton" ng-click="ctrl.updateNumber('.')">.</button>
+                    <button class="equalsbutton" ng-click="ctrl.calculateOutput()">=</button>
+                    <button class="operationbutton" ng-click="ctrl.updateOperator('+')">+</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

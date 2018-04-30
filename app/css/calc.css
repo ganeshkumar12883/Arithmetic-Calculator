@@ -1,0 +1,123 @@
+p {
+    font-size: 5px;
+}
+
+.calcbody {
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    width: 338px;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.previousoperation {
+    border: none;
+    width: 320px;
+    height: 25px;
+    border-radius: 2px;
+    margin-left: 4px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    text-align: right;
+    overflow: scroll;
+    padding: 10 10px;
+}
+
+.currentoperation {
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    width: 320px;
+    height: 40px;
+    border-radius: 2px;
+    margin-left: 4px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    text-align: right;
+    overflow: scroll;
+    padding: 10 10px;
+}
+
+.output {
+    background: whitesmoke;
+    color: black;
+    font-family: "Courier New", Courier;
+    padding: 0 10px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.calcbuttons {
+    width: 450px;
+}
+
+.operationbutton {
+    width: 75px;
+    height: 40px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    background-color: lightgrey;
+    font-size: 15px;
+    margin: 3px;
+}
+
+.longerbutton {
+    width: 158px;
+    height: 40px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    background-color: lightgrey;
+    font-size: 15px;
+    margin: 3px;
+}
+
+.equalsbutton {
+    width: 75px;
+    height: 40px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    background-color: dodgerblue;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    margin: 3px;
+}
+
+.numberbutton {
+    width: 75px;
+    height: 40px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    background-color: whitesmoke;
+    font-size: 15px;
+    margin: 3px;
+}
+
+.numberfield {
+    width: 150px;
+    height: 30px;
+    border: none;
+    text-align: right;
+    font: 30px 'Lucida Sans Unicode', arial, sans-serif;
+}
+
+.prevopfield {
+    width: 150px;
+    height: 30px;
+    border: none;
+    text-align: right;
+    font: 15px 'Lucida Sans Unicode', arial, sans-serif;
+    color: grey;
+}
+
+span {
+    vertical-align: middle;
+}
